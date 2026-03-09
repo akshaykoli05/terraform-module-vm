@@ -24,4 +24,10 @@ resource "azurerm_virtual_machine" "this" {
     admin_username = "azureuser"
     admin_password = "P@ssword123!"
   }
+
+  # ✅ Required for Windows VM
+  os_profile_windows_config {
+    provision_vm_agent        = true
+    enable_automatic_upgrades = true
+  }
 }
