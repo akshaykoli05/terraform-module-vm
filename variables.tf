@@ -6,3 +6,6 @@ variable "nic_id" {}
 variable "os_type" {
   description = "Operating system type (Linux/Windows)"
 }
+variable "vm_suffix" {
+  description = "Numeric suffix for VM name (e.g., 01, 02)"
+}
